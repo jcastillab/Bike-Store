@@ -21,7 +21,7 @@ Este proyecto consiste en el análisis completo de una base de datos relacional 
 - Tipo: Relacional (Modelo entidad-relación)
 - Tablas clave: `orders`, `customers`, `products`, `order_items`, `staffs`, `stocks`
 
-![Diagrama Entidad-Relación]([ruta/a/diagrama.png](https://github.com/jcastillab/Bike-Store/blob/main/Bike%20store-db.png)
+![Diagrama Entidad-Relación](https://github.com/jcastillab/Bike-Store/blob/main/Bike%20store-db.png)
 
 ---
 
