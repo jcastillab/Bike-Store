@@ -51,7 +51,7 @@ Este proyecto consiste en el análisis completo de una base de datos relacional 
 - Tiempo promedio de entrega
 - Inventario bajo por tienda
 
-Todas las consultas están documentadas en el archivo [`consultas.sql`](ruta/al/archivo.sql).
+Todas las consultas están documentadas en los archivos de la carpeta Queries
 
 ---
 
