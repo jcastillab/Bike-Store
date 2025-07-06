@@ -1,4 +1,4 @@
-# 🚴‍♂️ Bike Store Analytics – SQL + Power BI
+# 🚴‍♂️ Bike Store Analytics – SQL + Power BI (En progreso)
 
 Este proyecto consiste en el análisis completo de una base de datos relacional de una tienda de bicicletas. Se trabajó con SQL para extraer y transformar la información, y con Power BI para visualizar métricas clave del negocio como ventas, inventario, desempeño del personal y comportamiento de clientes.
 
