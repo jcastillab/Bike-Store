@@ -1,102 +1,46 @@
-# 🚴‍♂️ Bike Store Analytics – SQL + Power BI (En progreso)
+# 🚴‍♂️ Bike Store SQL Analytics
 
-Este proyecto consiste en el análisis completo de una base de datos relacional de una tienda de bicicletas. Se trabajó con SQL para extraer y transformar la información, y con Power BI para visualizar métricas clave del negocio como ventas, inventario, desempeño del personal y comportamiento de clientes.
-
----
-
-## 🧠 Objetivos del Proyecto
-
-- Analizar el rendimiento de ventas por producto, tienda, marca y categoría.
-- Identificar a los clientes más frecuentes y sus patrones de compra.
-- Visualizar el inventario por tienda y detectar productos agotados.
-- Evaluar el desempeño del equipo de ventas.
-- Generar KPIs accionables mediante dashboards en Power BI.
+> 💼 Análisis de datos de una tienda de bicicletas usando PostgreSQL y Power BI  
+> 💼 Bike store sales and inventory analytics using PostgreSQL and Power BI
 
 ---
 
-## 🗃️ Base de Datos
+## 📋 Descripción / Description
 
-- Nombre: **Bike Store**
-- Fuente: Kaggle
-- Tipo: Relacional (Modelo entidad-relación)
-- Tablas clave: `orders`, `customers`, `products`, `order_items`, `staffs`, `stocks`
+Este proyecto es parte de mi portafolio de análisis de datos. Utiliza una base de datos transaccional ficticia de una tienda de bicicletas para explorar, analizar y visualizar datos de ventas, inventario y rendimiento por tienda, categoría y cliente.
 
-![Diagrama Entidad-Relación](https://github.com/jcastillab/Bike-Store/blob/main/Bike%20store-db.png)
+This project is part of my data analytics portfolio. It uses a fictional transactional database of a bike store to explore, analyze, and visualize sales, inventory, and performance data by store, category, and customer.
 
 ---
 
-## 🛠️ Herramientas Utilizadas
+## 🎯 Objetivos / Objectives
 
-- PostgreSQL (para ejecución de queries SQL)
-- Power BI (para visualizaciones interactivas)
-- GitHub (para control de versiones y documentación del proyecto)
+- Consultar, explorar y analizar datos relacionales en PostgreSQL.
+- Calcular métricas clave como ventas, descuentos y stock.
+- Diseñar dashboards interactivos con Power BI.
+- Construir una narrativa analítica basada en datos reales.
 
----
-
-## 🧩 Consultas SQL por Nivel
-
-### 🔰 Básico
-- Listado de clientes
-- Productos disponibles y sus precios
-- Empleados activos por tienda
-
-### 🟡 Intermedio
-- Total de ventas por producto y tienda
-- Órdenes por cliente
-- Productos con descuento aplicado
-
-### 🔴 Avanzado
-- Clientes más rentables
-- Ranking mensual de ventas
-- Tiempo promedio de entrega
-- Inventario bajo por tienda
-
-Todas las consultas están documentadas en los archivos de la carpeta Queries
+- Query, explore and analyze relational data using PostgreSQL.
+- Calculate key metrics like sales, discounts, and stock.
+- Design interactive dashboards with Power BI.
+- Build a data-driven business narrative.
 
 ---
 
-## 📊 Dashboard en Power BI
+## 🧠 Tecnologías utilizadas / Tech Stack
 
-Se construyó un dashboard con los siguientes elementos clave:
-
-- **Ventas totales mensuales**
-- **Productos más vendidos**
-- **Clientes frecuentes**
-- **Estado del inventario por tienda**
-- **Desempeño por empleado**
-
-📎 Enlace al reporte interactivo (Power BI Service):  
-👉 [Ver el Dashboard](https://app.powerbi.com/...)
+| Herramienta / Tool     | Uso / Purpose                          |
+|------------------------|----------------------------------------|
+| PostgreSQL             | Consulta y modelado relacional         |
+| pgAdmin 4              | Visualización y administración de BD   |
+| Power BI               | Dashboard interactivo                  |
+| Git + GitHub           | Control de versiones y portafolio      |
+| Markdown               | Documentación técnica (`README.md`)    |
 
 ---
 
-## 🔌 ¿Cómo se conectó Power BI a PostgreSQL?
+## 🗂️ Estructura del repositorio / Repository Structure
 
-1. **Abrir Power BI Desktop**
-2. Ir a `Inicio > Obtener datos > PostgreSQL`
-3. Ingresar los datos de conexión:
-   - Servidor: `localhost` (o la IP de tu servidor)
-   - Base de datos: `bike_store`
-4. Ingresar usuario y contraseña
-5. Seleccionar las tablas requeridas (`orders`, `products`, `order_items`, etc.)
-6. Cargar datos al modelo
-7. Crear relaciones entre tablas en el panel de `Modelo`
-8. Comenzar a construir visualizaciones
-
-✅ *Nota: Asegúrate de tener instalado el conector de PostgreSQL para Power BI.*
-
----
-
-## 📌 Lecciones Aprendidas
-
-- Cómo estructurar consultas SQL desde lo simple a lo avanzado
-- Aplicación de CTEs, subconsultas, agregaciones y funciones ventana
-- Modelado de datos para visualización en Power BI
-- Diseño de dashboards atractivos e informativos
-
----
-
-## 📁 Estructura del repositorio
 ```<code>
 bike-store-sql-analytics/
 
@@ -113,3 +57,68 @@ bike-store-sql-analytics/
 └── diagrama_bike_store.png
 
 ```
+
+
+---
+
+## 📊 DAZ y KPIs / KPIs & Analytical Design
+
+**Dimensiones y hechos clave del modelo:**
+
+- **Tiendas** (`stores`)  
+- **Productos** (`products`, `categories`, `brands`)  
+- **Clientes** (`customers`)  
+- **Empleados** (`staffs`)  
+- **Órdenes y ventas** (`orders`, `order_items`, `stocks`)
+
+**Principales KPIs calculados:**
+
+| KPI (Español)                         | KPI (English)                      |
+|--------------------------------------|------------------------------------|
+| Total de ventas                      | Total sales                        |
+| Descuento promedio por orden         | Average discount per order         |
+| Productos en stock por tienda        | Products in stock per store        |
+| Ticket promedio por cliente          | Average ticket per customer        |
+| Ventas por categoría y marca         | Sales by category and brand        |
+| Empleados por tienda                 | Employees per store                |
+
+---
+
+## 📈 Dashboard en Power BI / Power BI Dashboard
+
+📌 El archivo `.pbix` se encuentra en la carpeta `/dashboard`.
+
+📌 The archive `.pbix` is on the `/dashboard` fold.
+### Conexión a PostgreSQL:
+
+1. Abre Power BI Desktop.
+2. Elige **Get Data** → PostgreSQL.
+3. Ingresa las credenciales de tu servidor local o remoto.
+4. Selecciona las tablas necesarias (ej. `orders`, `order_items`, `products`, etc).
+5. Crea relaciones siguiendo el modelo entidad-relación.
+6. Aplica medidas DAX y construye visualizaciones.
+
+### Connection to PostgreSQL:
+
+1. Open Power BI Desktop.
+2. Choose **Get Data** → PostgreSQL.
+3. Enter the credentials for your local or remote server.
+4. Select the necessary tables (e.g. `orders`, `order_items`, `products`, etc).
+5. Create relationships following the entity-relationship model.6. Apply DAX measures and build visualizations.
+
+---
+
+## 🛠 Cómo usar / How to use
+
+```bash
+-- 1. Crear la base de datos
+CREATE DATABASE bikestore;
+
+-- 2. Ejecutar scripts para crear tablas
+\i scripts/crear_tablas.sql
+
+-- 3. Cargar datos desde CSV
+\COPY products FROM 'ruta/del/archivo.csv' WITH CSV HEADER;
+
+-- 4. Ejecutar consultas desde la carpeta /consultas
+
