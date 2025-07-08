@@ -118,14 +118,15 @@ bike-store-sql-analytics/
 ## 🛠 Cómo usar / How to use
 
 ```bash
--- 1. Crear la base de datos
+-- 1. Crear la base de datos (create database)
 CREATE DATABASE bikestore;
 
--- 2. Ejecutar scripts para crear tablas
-\i scripts/crear_tablas.sql
+-- 2. Ejecutar scripts para crear tablas (execute scripts to create tables)
+querys/database creation.sql
 
--- 3. Cargar datos desde CSV
+-- 3. Cargar datos desde CSV (copy data from CSV
 \COPY products FROM 'ruta/del/archivo.csv' WITH CSV HEADER;
 
--- 4. Ejecutar consultas desde la carpeta /consultas
+-- 4. Ejecutar consultas desde la carpeta /querys (execute querys from /querys folder)
+
 
