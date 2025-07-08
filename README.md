@@ -44,10 +44,20 @@ This project is part of my data analytics portfolio. It uses a fictional transac
 ```<code>
 bike-store-sql-analytics/
 
-├── consultas/
-│ ├── consultas_basicas.sql
-│ ├── consultas_intermedias.sql
-│ └── consultas_avanzadas.sql
+├── querys/
+│ ├── basic querys.sql
+│ ├── intermediate querys.sql
+│ └── advanced querys.sql
+├── Tables/
+│ ├── brands.csv
+│ ├── categories.csv
+│ ├── customers.csv
+│ ├── order_items.csv
+│ ├── orders.csv
+│ ├── products.csv
+│ ├── staffs.csv
+│ ├── stocks.csv
+│ ├── stores.csv
 ├── screenshots/
 │ ├── dashboard_ventas.png
 │ └── inventario.png
