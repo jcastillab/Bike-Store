@@ -58,9 +58,6 @@ bike-store-sql-analytics/
 │ ├── staffs.csv
 │ ├── stocks.csv
 │ ├── stores.csv
-├── screenshots/
-│ ├── dashboard_ventas.png
-│ └── inventario.png
 ├── powerbi/
 │ └── bike-store-dashboard.pbix
 ├── README.md
