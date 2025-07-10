@@ -10,7 +10,7 @@
 Este proyecto es parte de mi portafolio de análisis de datos. Utiliza una base de datos transaccional ficticia de una tienda de bicicletas para explorar, analizar y visualizar datos de ventas, inventario y rendimiento por tienda, categoría y cliente.
 
 This project is part of my data analytics portfolio. It uses a fictional transactional database of a bike store to explore, analyze, and visualize sales, inventory, and performance data by store, category, and customer.
-
+You can watch the interactive dashboard in: https://app.powerbi.com/view?r=eyJrIjoiNDE5Zjg2NWQtOWYzYy00NjlkLWJiYzAtMjU2MjFkOTI4YjI0IiwidCI6IjAzYzIzNTFjLTIxMzgtNDIxYi04YjNjLTI4N2E5Y2QwNTExOSIsImMiOjR9
 ---
 
 ## 🎯 Objetivos / Objectives
